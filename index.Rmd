@@ -1,0 +1,84 @@
+--- 
+title: "A first investigation into the evolutionary relationships, population structure and demographic history of New Zealand Trevally (*Pseudocaranx georgianus*) and its implications for fisheries management"
+subtitle: "A thesis submitted to Victoria University of Wellington in partial fulfillment of the requirement for the degree of Master of Science in Ecology and Biodiversity"
+author:
+- "Leah Kemp"
+- "Primary Supervisor: [Peter Ritchie](https://www.wgtn.ac.nz/sbs/about/staff/peter-ritchie), [Victoria University of Wellington](https://www.wgtn.ac.nz/)"
+- "Secondary Supervisor: [Maren Wellenreuther](http://www.marenwellenreuther.com/), [Plant and Food Research](https://www.plantandfood.co.nz/)"
+date: "September 2019"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook:
+    dev: svglite
+    css: style.css
+    config:
+      toc:
+        collapse: none
+        before: |
+          <li><a href="./">Pseudocaranx georgianus</a></li>
+        after: |
+          <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+      sharing:
+        facebook: yes
+        github: yes
+        twitter: yes
+        linkedin: yes
+        weibo: no
+        instapaper: no
+        vk: no
+        all: ['facebook', 'github', 'twitter', 'linkedin']
+cover-image: imagesFinal/htmlCoverPage.png
+always_allow_html: yes
+documentclass: book
+bibliography: [endnoterefs.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+delete_merged_file: true
+github-repo: leahkemp/welly-trevally-html
+---
+
+```{r, include = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
+# Load libraries
+library(bookdown)
+library(knitr)
+library(kableExtra)
+library(leaflet)
+library(dplyr)
+library(sp)
+library(sf)
+library(raster)
+library(mapview)
+library(leaflet.minicharts)
+library(DT)
+library(ggplot2)
+library(dplyr)
+library(ggthemes)
+library(grDevices)
+library(grid)
+library(gridExtra)
+library(float)
+library(phylocanvas)
+library(plotly)
+```
+
+```{r include = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
+# Establish function that specifies tables cells to be italicised
+format_cells <- function(df, rows, cols, value = c("italics")){
+  # select the correct markup
+  map <- setNames(c("\\textit{", "*", "~~"), c("italics"))
+  markup <- map[value]
+  for (r in rows){
+    for(c in cols){
+      # Make sure values are not factors
+      df[[c]] <- as.character( df[[c]])
+      # Update formatting
+      df[r, c] <- paste0(markup, df[r, c], "}")
+    }
+  }
+  return(df)
+}
+```
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```

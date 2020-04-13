@@ -1,0 +1,8 @@
+# Preface {-}
+
+This is an unofficial version of my MSc thesis. An official verison can be accessed from the [Victoria University of Wellington Research Archive](http://researcharchive.vuw.ac.nz/). However, the writing in this presentation of the thesis is consistant with the offical thesis submission and only differs in some formatting changes appropriate for presenting the thesis in an html format. 
+
+# Other information {-}
+See the [welly-trevally git repository](https://github.com/leahkemp/welly-trevally) and the [trevallyApp git repository](https://github.com/leahkemp/trevallyApp) for the code and documentation associated with this thesis and the accompnying app.
+
+Key R packages used within R version 3.6.1 to create this thesis and the accompanying app: bookdown [@R-bookdown], dplyr [@R-dplyr], ggplot2 [@R-ggplot2], kableExtra [@R-kableExtra], knitr [@R-knitr], leaflet [@R-leaflet], leafletextras [@R-leaflet.extras], mapview [@R-mapview], networkD3 [@R-networkD3], phylocanvas [@R-phylocanvas], plotly [@R-plotly], rmarkdown [@R-rmarkdown], sf [@R-sf], sp [@R-sp] and tinytex [@R-tinytex].
