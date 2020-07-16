@@ -1,6 +1,6 @@
 # Preface {-}
 
-This is an unofficial version of my MSc thesis. An official verison can be accessed from the [Victoria University of Wellington Research Archive](http://researcharchive.vuw.ac.nz/). However, the writing in this presentation of the thesis is consistant with the offical thesis submission and only differs in some formatting changes appropriate for presenting the thesis in an html format. 
+This is an unofficial version of my MSc thesis. An official verison can be accessed from the [Victoria University of Wellington Research Archive](http://researcharchive.vuw.ac.nz/handle/10063/9011). However, the writing in this presentation of the thesis is consistant with the offical thesis submission and only differs in some formatting changes appropriate for presenting the thesis in an html format. 
 
 # Other information {-}
 See the [welly-trevally git repository](https://github.com/leahkemp/welly-trevally) and the [trevallyApp git repository](https://github.com/leahkemp/trevallyApp) for the code and documentation associated with this thesis and the accompnying app.
